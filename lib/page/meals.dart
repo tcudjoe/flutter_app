@@ -33,47 +33,53 @@ class Meals extends StatelessWidget {
                 child: Row(
                   children: [
                     GestureDetector(
-                      child: GestureDetector(
-                        onTap: () => Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                            builder: (context) => Meal1(),
-                          ),
+                      onTap: () => Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => Meal1(),
                         ),
-                        child: Card(
-                          margin: EdgeInsets.all(15),
-                          shadowColor: Colors.cyan[400],
-                          elevation: 7,
-                          clipBehavior: Clip.antiAlias,
-                          color: Colors.grey[400],
-                          shape: RoundedRectangleBorder(
-                            borderRadius: BorderRadius.circular(16),
-                          ),
-                          child: Stack(
-                            alignment: Alignment.center,
-                            children: [
-                              Image(
-                                image: AssetImage(
-                                  'assets/img/meal1.jpg',
-                                ),
-                                height: 170,
-                                width: 175,
-                                fit: BoxFit.cover,
+                      ),
+                      child: Card(
+                        margin: EdgeInsets.all(15),
+                        shadowColor: Colors.cyan[400],
+                        elevation: 7,
+                        clipBehavior: Clip.antiAlias,
+                        color: Colors.grey[400],
+                        shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(16),
+                        ),
+                        child: Stack(
+                          alignment: Alignment.center,
+                          children: [
+                            Image(
+                              image: AssetImage(
+                                'assets/img/meal1.jpg',
                               ),
-                              Positioned(
-                                bottom: 16,
-                                right: 16,
-                                left: 16,
-                                child: Text(
-                                  'Chicken burger',
-                                  style: TextStyle(
-                                      fontWeight: FontWeight.bold,
-                                      color: Colors.white,
-                                      fontSize: 20),
+                              height: 170,
+                              width: 175,
+                              fit: BoxFit.cover,
+                            ),
+                            Positioned(
+                              bottom: 16,
+                              right: 16,
+                              left: 16,
+                              child: Text(
+                                'Chicken burger',
+                                style: TextStyle(
+                                  fontWeight: FontWeight.bold,
+                                  color: Colors.white,
+                                  fontSize: 20,
+                                  shadows: <Shadow>[
+                                    Shadow(
+                                      offset: Offset(2.0, 2.0),
+                                      blurRadius: 3.0,
+                                      color: Color.fromARGB(255, 0, 0, 0),
+                                    ),
+                                  ],
                                 ),
-                              )
-                            ],
-                          ),
+                              ),
+                            )
+                          ],
                         ),
                       ),
                     ),
@@ -111,9 +117,17 @@ class Meals extends StatelessWidget {
                               child: Text(
                                 'Jollof rice',
                                 style: TextStyle(
-                                    fontWeight: FontWeight.bold,
-                                    color: Colors.white,
-                                    fontSize: 16),
+                                  fontWeight: FontWeight.bold,
+                                  color: Colors.white,
+                                  fontSize: 16,
+                                  shadows: <Shadow>[
+                                    Shadow(
+                                      offset: Offset(2.0, 2.0),
+                                      blurRadius: 3.0,
+                                      color: Color.fromARGB(255, 0, 0, 0),
+                                    ),
+                                  ],
+                                ),
                               ),
                             )
                           ],
@@ -163,9 +177,17 @@ class Meals extends StatelessWidget {
                               child: Text(
                                 'Champignon soup',
                                 style: TextStyle(
-                                    fontWeight: FontWeight.bold,
-                                    color: Colors.white,
-                                    fontSize: 16),
+                                  fontWeight: FontWeight.bold,
+                                  color: Colors.white,
+                                  fontSize: 16,
+                                  shadows: <Shadow>[
+                                    Shadow(
+                                      offset: Offset(2.0, 2.0),
+                                      blurRadius: 3.0,
+                                      color: Color.fromARGB(255, 0, 0, 0),
+                                    ),
+                                  ],
+                                ),
                               ),
                             )
                           ],
@@ -206,9 +228,17 @@ class Meals extends StatelessWidget {
                               child: Text(
                                 'Risotto',
                                 style: TextStyle(
-                                    fontWeight: FontWeight.bold,
-                                    color: Colors.white,
-                                    fontSize: 16),
+                                  fontWeight: FontWeight.bold,
+                                  color: Colors.white,
+                                  fontSize: 16,
+                                  shadows: <Shadow>[
+                                    Shadow(
+                                      offset: Offset(2.0, 2.0),
+                                      blurRadius: 3.0,
+                                      color: Color.fromARGB(255, 0, 0, 0),
+                                    ),
+                                  ],
+                                ),
                               ),
                             )
                           ],
@@ -258,9 +288,17 @@ class Meals extends StatelessWidget {
                               child: Text(
                                 'Grilled makerel',
                                 style: TextStyle(
-                                    fontWeight: FontWeight.bold,
-                                    color: Colors.white,
-                                    fontSize: 16),
+                                  fontWeight: FontWeight.bold,
+                                  color: Colors.white,
+                                  fontSize: 16,
+                                  shadows: <Shadow>[
+                                    Shadow(
+                                      offset: Offset(2.0, 2.0),
+                                      blurRadius: 3.0,
+                                      color: Color.fromARGB(255, 0, 0, 0),
+                                    ),
+                                  ],
+                                ),
                               ),
                             )
                           ],
@@ -301,9 +339,17 @@ class Meals extends StatelessWidget {
                               child: Text(
                                 'Steak & greens',
                                 style: TextStyle(
-                                    fontWeight: FontWeight.bold,
-                                    color: Colors.white,
-                                    fontSize: 16),
+                                  fontWeight: FontWeight.bold,
+                                  color: Colors.white,
+                                  fontSize: 16,
+                                  shadows: <Shadow>[
+                                    Shadow(
+                                      offset: Offset(2.0, 2.0),
+                                      blurRadius: 3.0,
+                                      color: Color.fromARGB(255, 0, 0, 0),
+                                    ),
+                                  ],
+                                ),
                               ),
                             )
                           ],
@@ -353,9 +399,17 @@ class Meals extends StatelessWidget {
                               child: Text(
                                 'Turkey',
                                 style: TextStyle(
-                                    fontWeight: FontWeight.bold,
-                                    color: Colors.white,
-                                    fontSize: 20),
+                                  fontWeight: FontWeight.bold,
+                                  color: Colors.white,
+                                  fontSize: 20,
+                                  shadows: <Shadow>[
+                                    Shadow(
+                                      offset: Offset(2.0, 2.0),
+                                      blurRadius: 3.0,
+                                      color: Color.fromARGB(255, 0, 0, 0),
+                                    ),
+                                  ],
+                                ),
                               ),
                             )
                           ],
@@ -396,9 +450,17 @@ class Meals extends StatelessWidget {
                               child: Text(
                                 'Chicken & rice',
                                 style: TextStyle(
-                                    fontWeight: FontWeight.bold,
-                                    color: Colors.white,
-                                    fontSize: 20),
+                                  fontWeight: FontWeight.bold,
+                                  color: Colors.white,
+                                  fontSize: 20,
+                                  shadows: <Shadow>[
+                                    Shadow(
+                                      offset: Offset(2.0, 2.0),
+                                      blurRadius: 3.0,
+                                      color: Color.fromARGB(255, 0, 0, 0),
+                                    ),
+                                  ],
+                                ),
                               ),
                             )
                           ],
@@ -448,9 +510,17 @@ class Meals extends StatelessWidget {
                               child: Text(
                                 'Pyta Gyros',
                                 style: TextStyle(
-                                    fontWeight: FontWeight.bold,
-                                    color: Colors.white,
-                                    fontSize: 16),
+                                  fontWeight: FontWeight.bold,
+                                  color: Colors.white,
+                                  fontSize: 16,
+                                  shadows: <Shadow>[
+                                    Shadow(
+                                      offset: Offset(2.0, 2.0),
+                                      blurRadius: 3.0,
+                                      color: Color.fromARGB(255, 0, 0, 0),
+                                    ),
+                                  ],
+                                ),
                               ),
                             )
                           ],
@@ -491,9 +561,17 @@ class Meals extends StatelessWidget {
                               child: Text(
                                 'Grilled veggies salad',
                                 style: TextStyle(
-                                    fontWeight: FontWeight.bold,
-                                    color: Colors.white,
-                                    fontSize: 20),
+                                  fontWeight: FontWeight.bold,
+                                  color: Colors.white,
+                                  fontSize: 20,
+                                  shadows: <Shadow>[
+                                    Shadow(
+                                      offset: Offset(2.0, 2.0),
+                                      blurRadius: 3.0,
+                                      color: Color.fromARGB(255, 0, 0, 0),
+                                    ),
+                                  ],
+                                ),
                               ),
                             )
                           ],
@@ -543,9 +621,17 @@ class Meals extends StatelessWidget {
                               child: Text(
                                 'Seafood Paella',
                                 style: TextStyle(
-                                    fontWeight: FontWeight.bold,
-                                    color: Colors.white,
-                                    fontSize: 20),
+                                  fontWeight: FontWeight.bold,
+                                  color: Colors.white,
+                                  fontSize: 20,
+                                  shadows: <Shadow>[
+                                    Shadow(
+                                      offset: Offset(2.0, 2.0),
+                                      blurRadius: 3.0,
+                                      color: Color.fromARGB(255, 0, 0, 0),
+                                    ),
+                                  ],
+                                ),
                               ),
                             )
                           ],
@@ -586,9 +672,17 @@ class Meals extends StatelessWidget {
                               child: Text(
                                 'French onion soup',
                                 style: TextStyle(
-                                    fontWeight: FontWeight.bold,
-                                    color: Colors.white,
-                                    fontSize: 20),
+                                  fontWeight: FontWeight.bold,
+                                  color: Colors.white,
+                                  fontSize: 20,
+                                  shadows: <Shadow>[
+                                    Shadow(
+                                      offset: Offset(2.0, 2.0),
+                                      blurRadius: 3.0,
+                                      color: Color.fromARGB(255, 0, 0, 0),
+                                    ),
+                                  ],
+                                ),
                               ),
                             )
                           ],

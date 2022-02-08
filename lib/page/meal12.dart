@@ -8,7 +8,7 @@ class Meal12 extends StatelessWidget {
       backgroundColor: Colors.grey,
       appBar: AppBar(
         backgroundColor: Colors.cyan[900],
-        title: Text('French onion soup'),
+        title: Center(child: Text('French onion soup'),),
       ),
       body: SingleChildScrollView(
         child: Column(

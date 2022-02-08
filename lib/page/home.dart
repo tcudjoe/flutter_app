@@ -4,7 +4,7 @@ import 'package:test_1/page/meals.dart';
 import 'package:test_1/page/meal1.dart';
 import 'package:test_1/page/meal2.dart';
 import 'package:test_1/page/recentlyViewed.dart';
-
+import 'package:test_1/page/settings.dart';
 
 class Home extends StatelessWidget {
   @override
@@ -13,9 +13,24 @@ class Home extends StatelessWidget {
       backgroundColor: Colors.grey[400],
       appBar: AppBar(
         backgroundColor: Colors.cyan[900],
+
         title: Center(
           child: Text('Thuisgemaakt'),
         ),
+        actions: [
+          IconButton(
+              icon: Icon(
+                Icons.settings,
+                color: Colors.black,
+              ),
+              onPressed: () {
+                print('Setting button pressed');
+                Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => Settings(),),
+                );
+              }),
+        ],
       ),
       body: SingleChildScrollView(
         child: Column(
@@ -59,7 +74,14 @@ class Home extends StatelessWidget {
                             style: TextStyle(
                                 fontWeight: FontWeight.bold,
                                 color: Colors.white,
-                                fontSize: 20),
+                                fontSize: 20,
+                              shadows: <Shadow>[
+                                Shadow(
+                                  offset: Offset(2.0, 2.0),
+                                  blurRadius: 3.0,
+                                  color: Color.fromARGB(255, 0, 0, 0),
+                                ),
+                              ],),
                           ),
                         ),
                       ],
@@ -109,7 +131,14 @@ class Home extends StatelessWidget {
                                 style: TextStyle(
                                     fontWeight: FontWeight.bold,
                                     color: Colors.white,
-                                    fontSize: 16),
+                                    fontSize: 16,
+                                  shadows: <Shadow>[
+                                    Shadow(
+                                      offset: Offset(2.0, 2.0),
+                                      blurRadius: 3.0,
+                                      color: Color.fromARGB(255, 0, 0, 0),
+                                    ),
+                                  ],),
                               ),
                             )
                           ],
@@ -152,7 +181,14 @@ class Home extends StatelessWidget {
                                 style: TextStyle(
                                     fontWeight: FontWeight.bold,
                                     color: Colors.white,
-                                    fontSize: 16),
+                                    fontSize: 16,
+                                  shadows: <Shadow>[
+                                    Shadow(
+                                      offset: Offset(2.0, 2.0),
+                                      blurRadius: 3.0,
+                                      color: Color.fromARGB(255, 0, 0, 0),
+                                    ),
+                                  ],),
                               ),
                             )
                           ],
@@ -163,19 +199,22 @@ class Home extends StatelessWidget {
                 ),
               ),
             ),
-            ElevatedButton(
-              onPressed: () {
-                print('View all button pressed');
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(
-                    builder: (context) => Meals(),
-                  ),
-                );
-              },
-              child: Text('View all'),
-              style: ButtonStyle(
-                backgroundColor: MaterialStateProperty.all<Color>(Colors.teal),
+            Container(
+              child: ElevatedButton(
+                onPressed: () {
+                  print('View all button pressed');
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => Meals(),
+                    ),
+                  );
+                },
+                child: Text('View all'),
+                style: ButtonStyle(
+                  backgroundColor:
+                      MaterialStateProperty.all<Color>(Colors.teal),
+                ),
               ),
             ),
             Container(
@@ -217,7 +256,14 @@ class Home extends StatelessWidget {
                             style: TextStyle(
                                 fontWeight: FontWeight.bold,
                                 color: Colors.white,
-                                fontSize: 20),
+                                fontSize: 20,
+                              shadows: <Shadow>[
+                                Shadow(
+                                  offset: Offset(2.0, 2.0),
+                                  blurRadius: 3.0,
+                                  color: Color.fromARGB(255, 0, 0, 0),
+                                ),
+                              ],),
                           ),
                         )
                       ],

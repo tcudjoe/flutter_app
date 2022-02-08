@@ -82,19 +82,23 @@ class Meal1 extends StatelessWidget {
                   ),
                 ),
               ),
-              ElevatedButton(
-                onPressed: () {
-                  print('pressed back button meal 1');
-                  Navigator.pop(
-                    context,
-                    MaterialPageRoute(
-                      builder: (context) => Home(),
-                    ),
-                  );
-                },
-                child: Text('Back'),
-                style: ButtonStyle(
-                  backgroundColor: MaterialStateProperty.all<Color>(Colors.teal),
+              Container(
+                width: 200,
+                margin: EdgeInsets.only(bottom: 20, top: 10),
+                child: ElevatedButton(
+                  onPressed: () {
+                    print('pressed back button meal 1');
+                    Navigator.pop(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => Home(),
+                      ),
+                    );
+                  },
+                  child: Text('Back'),
+                  style: ButtonStyle(
+                    backgroundColor: MaterialStateProperty.all<Color>(Colors.teal),
+                  ),
                 ),
               )
             ],
